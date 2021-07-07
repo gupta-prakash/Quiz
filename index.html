@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UNIHUB</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+
+    <style>
+        @media (max-width: 980px) and (min-width: 780px) {
+            #heading {
+                margin-top: 4rem;
+            }
+
+            #box1 {
+                margin-left: 20px;
+            }
+            #btn{
+                margin-left: 80px;
+
+            }
+            #mainbox{
+                width: 35%;
+            }            
+        }
+
+        @media (max-width: 1150px) and (min-width: 980px) {
+            body {
+                /* background-color: blue; */
+            }
+
+            #heading {
+                margin-top: 4rem;
+            }
+
+            #box1 {
+                margin-left: 20px;
+            }
+
+        }
+    </style>
+</head>
+
+<body>
+    <section id="unihub">
+        <div id="home">
+
+            <h2>
+                Be Logical
+            </h2>
+            <p>
+                You have 60 sec to solve these reasoning based questions.                
+            </p>
+        </div>
+        <div id="heading">
+            <h2>
+                HERE'S A QUIZ
+            </h2>
+        </div>
+    </section>
+
+
+
+
+    <section id="container">
+        <div id="box1">
+
+            <div class="quiz">
+                <p class="ques"> QUES 1: 21 , 25 , 33 , 49 , 81 , (?)</p>
+                <input type="radio" name="answer1" value="a"> 145
+                <input type="radio" name="answer1" value="b"> 132
+                <input type="radio" name="answer1" value="c"> 113
+                <input type="radio" name="answer1" value="d"> 101
+            </div>
+
+            <div class="quiz">
+                <p class="ques"> QUES 2: 5 , 7 , 12 , 6 , 8 , 14 , 7 , (?) , 16 , 8 , 10 , 18</p>
+                <input type="radio" name="answer2" value="a"> 10
+                <input type="radio" name="answer2" value="b"> 8
+                <input type="radio" name="answer2" value="c"> 9
+                <input type="radio" name="answer2" value="d"> 12
+            </div>
+
+            <div class="quiz">
+                <p class="ques"> QUES 3: 2 , 7 , 9 , 3 , 8 , 11 , 4 , 9 , 13 , (?) , 10 , 15</p>
+                <input type="radio" name="answer3" value="a"> 3
+                <input type="radio" name="answer3" value="b"> 4
+                <input type="radio" name="answer3" value="c"> 5
+                <input type="radio" name="answer3" value="d"> 6
+            </div>
+
+            <div class="quiz">
+                <p class="ques"> QUES 4: 2 , 3 , 4 , 9 , 8 , 27 , 16 , (?)</p>
+                <input type="radio" name="answer4" value="a"> 49
+                <input type="radio" name="answer4" value="b"> 64
+                <input type="radio" name="answer4" value="c"> 100
+                <input type="radio" name="answer4" value="d"> 81
+            </div>
+
+            <div class="quiz">
+                <p class="ques"> QUES 5: 91 , 85 , 94 , 83 , 97 , 81 , (?) , 79</p>
+                <input type="radio" name="answer5" value="a"> 100
+                <input type="radio" name="answer5" value="b"> 98
+                <input type="radio" name="answer5" value="c"> 105
+                <input type="radio" name="answer5" value="d"> 120
+            </div>
+
+            <button type="button" onclick="radioVal()" id="btn">Submit</button>
+            <div id="result"></div>
+            <!-- <button type="button" onclick="previous()">Previous Ques</button> -->
+            <!-- <button type="button" onclick="next()">Next Ques</button> -->
+        </div>
+
+        <div id="mainbox" class="mainbox2">
+            <div id="box3">
+                <span id="timer"></span>
+            </div>
+
+            <div id="box2">
+                <div>
+                    <h3 id="apple"> </h3><span id="mango"></span>
+
+                    <p id="banana"></p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+</body>
+
+
+</html>
